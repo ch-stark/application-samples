@@ -18,6 +18,7 @@ spec:
       containers:
       - image: quay.io/jpacker/hugo-nginx:latest
         name: book-import
+        automountServiceAccountToken: false
         ports:
         - containerPort: 8080
           name: http-server

@@ -15,6 +15,7 @@ spec:
       labels:
         name: book-import
     spec:
+      automountServiceAccountToken: true
       containers:
       - image: quay.io/jpacker/hugo-nginx:latest
         name: book-import

@@ -5,7 +5,6 @@ metadata:
     name: book-import
   name: book-import
 spec:
-  automountServiceAccountToken: false
   replicas: 3
   selector:
     matchLabels:
@@ -15,11 +14,10 @@ spec:
       labels:
         name: book-import
     spec:
-      automountServiceAccountToken: true
+      automountServiceAccountToken: false
       containers:
       - image: quay.io/jpacker/hugo-nginx:latest
         name: book-import
-        automountServiceAccountToken: false
         ports:
         - containerPort: 8080
           name: http-server

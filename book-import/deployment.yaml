@@ -24,7 +24,7 @@ spec:
           name: http-server
         resources:
           requests:
-            cpu: "100m"
+            cpu: "2"
             memory: "1Gi"
           limits:
             cpu: "4"

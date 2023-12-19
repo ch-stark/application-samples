@@ -24,9 +24,9 @@ spec:
           name: http-server
         resources:
           requests:
-            cpu: "2"
+            cpu: "200m"
             memory: "1Gi"
           limits:
-            cpu: "4"
+            cpu: "400m"
             memory: "2Gi"
             ephemeral-storage: "100Mi"

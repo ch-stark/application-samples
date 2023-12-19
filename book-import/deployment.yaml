@@ -5,6 +5,7 @@ metadata:
     name: book-import
   name: book-import
 spec:
+  automountServiceAccountToken: false
   replicas: 3
   selector:
     matchLabels:
